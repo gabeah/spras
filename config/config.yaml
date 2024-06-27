@@ -74,7 +74,7 @@ algorithms:
         params:
               include: true
               run1:
-                  flow: [1] # The flow must be an int
+                  flow: [400] # The flow must be an int
                   capacity: [1]
 
       - name: "allpairs"
@@ -117,30 +117,12 @@ datasets:
     #  other_files: []
     #  data_dir: "input"
     -
-      label: responsenet1
-      node_files: ["RN1_sources.txt", "RN1_targets.txt"]
-      edge_files: ["RN1_network.txt"]
-      other_files: []
-      data_dir: "input"
-    -
-      label: responsenet2
+      label: responsenet11
       node_files: ["RN2_sources.txt", "RN2_targets.txt"]
       edge_files: ["RN2_network.txt"]
       other_files: []
       data_dir: "input"
-    #-
-    #  label: hum-responsenet1
-    #  node_files: ["RN1_sources.txt", "RN1_targets.txt"]
-    #  edge_files: ["Human-Dec2018.txt"]
-    #  other_files: []
-    #  data_dir: "input"
-    #-
-    #  label: hum-responsenet2
-    #  node_files: ["RN2_sources.txt", "RN2_targets.txt"]
-    #  edge_files: ["Human-Dec2018.txt"]
-    #  other_files: []
-    #  data_dir: "input"
-
+    
 # If we want to reconstruct then we should set run to true.
 # TODO: if include is true above but run is false here, algs are not run.
 # is this the behavior we want?
